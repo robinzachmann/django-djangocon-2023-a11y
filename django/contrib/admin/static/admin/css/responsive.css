@@ -282,6 +282,11 @@ input[type="submit"], button {
         flex-direction: column;
     }
 
+    .aligned .selector-available label, .aligned .selector-chosen label {
+        /* override responsive style of .aligned label */
+        padding: 8px;
+    }
+
     .selector select {
         width: 100%;
         flex: 1 0 auto;
@@ -701,6 +706,11 @@ input[type="submit"], button {
     .selector-available, .selector-chosen {
         margin-bottom: 0;
         flex: 1 1 auto;
+    }
+
+    .aligned .selector-available label, .aligned .selector-chosen label {
+        /* override responsive style of .aligned label */
+        padding: 8px;
     }
 
     .selector select {

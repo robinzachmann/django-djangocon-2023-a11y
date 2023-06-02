@@ -20,9 +20,18 @@
     flex-direction: column;
 }
 
-.selector-available h2, .selector-chosen h2 {
+.aligned .selector-available label, .aligned .selector-chosen label {
     border: 1px solid var(--border-color);
     border-radius: 4px 4px 0 0;
+    background: var(--primary);
+    padding: 8px;
+    text-align: left;
+    width: auto;
+}
+
+.aligned .selector-available label:not(.vCheckboxLabel):after,
+.aligned .selector-available label:not(.vCheckboxLabel):after {
+    content: none;
 }
 
 .selector-chosen .list-footer-display {
@@ -40,14 +49,9 @@
     color: var(--breadcrumbs-fg);
 }
 
-.selector-chosen h2 {
+.selector-chosen label {
     background: var(--primary);
     color: var(--header-link-color);
-}
-
-.selector .selector-available h2 {
-    background: var(--darkened-bg);
-    color: var(--body-quiet-color);
 }
 
 .selector .selector-filter {
